@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 800px;
+}
+.container{
+    background: url(../images/premium_photo-1710286469759-a15530a4607d.jpeg) center /cover no-repeat;
+    height: 100vh; 
+    width: 100%;  
+    padding-top:150px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   position: relative;
+   
+}
+.div1, .div2, .div3, .div4 {
+    background: url(../images/butterfly_no_bg.gif) center /cover;
+    width:100px ;
+    height: 100px;
+}
+.div2{
+    position: absolute;
+    right: 0;
+}
+.div4{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+.div1{
+    animation-name: butterfly;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 230px;
+}
+@keyframes butterfly{
+    from{
+        color: rgb(134, 29, 219);
+        left: 0;
+        scale: 2;
+    }
+    to{
+        color: rgb(252, 130, 146);
+       left: 1250px;
+       scale: 1;
+    }
+}
+/* ////////////////////////////////////////////////////////////////////////////// */
+.div2{
+    animation: butterfly2 3s ease 4s forwards;
+    position: absolute;
+    right: 0;
+    transform: scaleX(-1); 
+}
+@keyframes butterfly2{
+    from{
+        color: rgb(134, 29, 219);
+        right: 0;
+        scale: 2;
+    }
+    to{
+        color: rgb(252, 130, 146);
+        right: 1250px;
+        scale: 1;
+    }
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+.div3{
+    animation: butterfly3 3s ease 7s forwards;
+    position: absolute;
+    top: 420px;
+}
+@keyframes butterfly3{
+    from{
+        color: rgb(134, 29, 219);
+        left: 0;
+        scale: 2;
+    }
+    to{
+        color: rgb(252, 130, 146);
+        left: 1250px;
+        scale: 1;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.div4{
+    animation: butterfly4 3s ease 10s forwards;
+    position: absolute;
+    transform: scaleX(-1);
+}
+@keyframes butterfly4{
+    from{
+        color: rgb(134, 29, 219);
+        right: 0;
+        scale: 2;
+    }
+    to{
+        color: rgb(252, 130, 146);
+        right: 1250px;
+        scale: 1;
+    }
+}
+
